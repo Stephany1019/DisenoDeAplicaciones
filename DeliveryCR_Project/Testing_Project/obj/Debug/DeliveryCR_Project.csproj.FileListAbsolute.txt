@@ -1,0 +1,81 @@
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\bin\Debug\Testing_Project.exe.config
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\bin\Debug\Testing_Project.exe
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\bin\Debug\Testing_Project.pdb
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Admin.Admin.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.FrmLogin.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Cliente.FrmPrincipalUsuario.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton1.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton2.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.FrmPrincipalEmpresarial.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.FrmRegistro.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.Principal.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.Properties.Resources.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.FrmPrincipalMensajero.resources
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.GenerateResource.cache
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.CoreCompileInputs.cache
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.exe
+C:\Users\eherreran967\Desktop\Testing_Project\Testing_Project\obj\Debug\Testing_Project.pdb
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.exe.config
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.exe
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.pdb
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csprojAssemblyReference.cache
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Admin.Admin.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmLogin.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Cliente.FrmPrincipalUsuario.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton1.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton2.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmPrincipalEmpresarial.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmRegistro.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Principal.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Properties.Resources.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.FrmPrincipalMensajero.resources
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.GenerateResource.cache
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.CoreCompileInputs.cache
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.exe
+C:\Users\eherreran967\Desktop\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.pdb
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.exe.config
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.exe
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.pdb
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csprojAssemblyReference.cache
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Admin.Admin.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmLogin.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Cliente.FrmPrincipalUsuario.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton1.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton2.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmPrincipalEmpresarial.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmRegistro.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Principal.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Properties.Resources.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.FrmPrincipalMensajero.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.GenerateResource.cache
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.CoreCompileInputs.cache
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.exe
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.pdb
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmRestaurante.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmProducto.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmSupermercado.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmLocalRestaurante.resources
+D:\VisualStudio projects\Desarrollo apps de software\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmLocalSupermercado.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.exe.config
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.exe
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\bin\Debug\Testing_Project.pdb
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csprojAssemblyReference.cache
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Admin.Admin.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmLocalRestaurante.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmLocalSupermercado.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmProducto.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmRestaurante.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmSupermercado.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmLogin.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Cliente.FrmPrincipalUsuario.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton1.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton2.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmPrincipalEmpresarial.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmRegistro.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Principal.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Properties.Resources.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.FrmPrincipalMensajero.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.GenerateResource.cache
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.CoreCompileInputs.cache
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.exe
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.pdb
