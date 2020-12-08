@@ -13,6 +13,7 @@ namespace Testing_Project
     {
         public static bool Login_autorizado;
         public static String Tipo_Acceso;
+        public static String Usuarios;
 
         public static SqlConnection RetornaAcceso()
         {
@@ -106,6 +107,27 @@ namespace Testing_Project
                 cmd.Parameters.AddWithValue("@apellido", apellido);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@telefono", telefono);
+                cmd.Parameters.AddWithValue("@Pais", Pais);
+                cmd.Parameters.AddWithValue("@Provincia", Provincia);
+                cmd.Parameters.AddWithValue("@Canton", Canton);
+                cmd.Parameters.AddWithValue("@Distrito", Distrito);
+                cmd.Parameters.AddWithValue("@Apartamento", Apartamento);
+                cmd.Parameters.AddWithValue("@Zipcode", Zipcode);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void AgregarDireccion(String Username, String nombreDir, String Pais, String Provincia, String Canton, String Distrito, String Apartamento, String Zipcode)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO tbDireccion ( Username, " + " nombreDir, Pais, Provincia, Canton, Distrito, Apartamento, Zipcode) values ( @Username," + " @nombreDir, @Pais, @Provincia, @Canton, @Distrito, @Apartamento, @Zipcode) "))
+            {
+                cmd.Parameters.AddWithValue("@Username", Username);
+                cmd.Parameters.AddWithValue("@nombreDir", nombreDir);
                 cmd.Parameters.AddWithValue("@Pais", Pais);
                 cmd.Parameters.AddWithValue("@Provincia", Provincia);
                 cmd.Parameters.AddWithValue("@Canton", Canton);

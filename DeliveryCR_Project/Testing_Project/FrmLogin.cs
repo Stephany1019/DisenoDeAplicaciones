@@ -22,6 +22,7 @@ namespace Testing_Project
             if (SQLTransact.claveValida(txtUsario.Text, txtPass.Text))
             {
                 SQLTransact.Login_autorizado = true;
+                SQLTransact.Usuarios = txtUsario.Text;
                 SQLTransact.Tipo_Acceso = SQLTransact.TipoAcceso(txtUsario.Text);
                 this.Close();
             }

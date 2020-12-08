@@ -19,6 +19,7 @@ namespace Testing_Project
         {
             SQLTransact.Login_autorizado = false;
             SQLTransact.Tipo_Acceso = "";
+            SQLTransact.Usuarios = "";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogin());
