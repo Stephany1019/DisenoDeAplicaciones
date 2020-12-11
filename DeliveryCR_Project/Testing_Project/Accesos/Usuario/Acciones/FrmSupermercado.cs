@@ -66,5 +66,35 @@ namespace Testing_Project.Accesos.Usuario.Acciones
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Acciones_supermercado.Carnes carnes = new Acciones_supermercado.Carnes();
+            carnes.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Acciones_supermercado.Snacks snacks = new Acciones_supermercado.Snacks();
+            snacks.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Acciones_supermercado.Lacteos lacteos = new Acciones_supermercado.Lacteos();
+            lacteos.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Acciones_supermercado.Bebidas bebidas = new Acciones_supermercado.Bebidas();
+            bebidas.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Acciones_supermercado.Limpieza limpieza = new Acciones_supermercado.Limpieza();
+            limpieza.ShowDialog();
+        }
     }
 }
