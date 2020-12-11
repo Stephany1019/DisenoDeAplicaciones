@@ -114,7 +114,7 @@ namespace Testing_Project
             if (SQLTransact.UsuarioValido(txtUsername.Text) && SQLTransact.CorreoValido(txtEmail.Text))
             {
                 SQLTransact.AgregarLogin(txtUsername.Text, txtPass.Text, comboBox1.Text);
-                SQLTransact.AgregarPersona(txtNombre.Text, txtApellido.Text, txtEmail.Text, txtTelefono.Text, txtPais.Text, txtProvincia.Text, txtCanton.Text, txtCalle.Text, txtApartamento.Text, txtZipcode.Text);
+                SQLTransact.AgregarPersona(txtNombre.Text, txtApellido.Text, txtEmail.Text, txtTelefono.Text, txtPais.Text, txtProvincia.Text, txtCanton.Text, txtCalle.Text, txtApartamento.Text, txtZipcode.Text, comboBox1.Text);
                 MessageBox.Show("Registro Completado", "Aviso");
                 this.Close();
             }
