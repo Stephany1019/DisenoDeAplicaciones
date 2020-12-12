@@ -20,7 +20,7 @@ namespace Testing_Project
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
-
+            comboBox1.SelectedIndex = comboBox1.Items.IndexOf("Usuario");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

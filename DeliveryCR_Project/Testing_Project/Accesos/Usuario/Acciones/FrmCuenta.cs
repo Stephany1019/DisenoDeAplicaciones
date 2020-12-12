@@ -37,5 +37,17 @@ namespace Testing_Project.Accesos.Usuario.Acciones
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmNuevaDirec Direc = new FrmNuevaDirec();
+            Direc.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            IniSesion Sesion = new IniSesion();
+            Sesion.ShowDialog();
+        }
     }
 }
