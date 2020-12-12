@@ -132,5 +132,55 @@ namespace Testing_Project
             Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
             return Resultado;
         }
+
+        public static void agregaProducto(String nombre, String desc, float precio, int tipo) {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO Producto ( Nombre, Descripcion, Precio, Tipo) values ( @Nombre, @Descripcion, @Precio, @Tipo) "))
+            {
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                cmd.Parameters.AddWithValue("@Descripcion", desc);
+                cmd.Parameters.AddWithValue("@Precio", precio);
+                cmd.Parameters.AddWithValue("@Tipo", tipo);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void modificaProducto(String nombre, String desc, float precio, int tipo)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO Producto ( Nombre, Descripcion, Precio, Tipo) values ( @Nombre, @Descripcion, @Precio, @Tipo) "))
+            {
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                cmd.Parameters.AddWithValue("@Descripcion", desc);
+                cmd.Parameters.AddWithValue("@Precio", precio);
+                cmd.Parameters.AddWithValue("@Tipo", tipo);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void eliminaProducto(String nombre, String desc, float precio, int tipo)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO Producto ( Nombre, Descripcion, Precio, Tipo) values ( @Nombre, @Descripcion, @Precio, @Tipo) "))
+            {
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                cmd.Parameters.AddWithValue("@Descripcion", desc);
+                cmd.Parameters.AddWithValue("@Precio", precio);
+                cmd.Parameters.AddWithValue("@Tipo", tipo);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
     }
 }

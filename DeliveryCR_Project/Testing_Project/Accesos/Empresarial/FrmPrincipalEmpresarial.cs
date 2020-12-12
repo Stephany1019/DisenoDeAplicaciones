@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Testing_Project.Accesos.Empresarial.Acciones;
 using Testing_Project.Usuarios.Empresarial;
 
 namespace Testing_Project
@@ -16,10 +17,6 @@ namespace Testing_Project
         public FrmPrincipalEmpresarial()
         {
             InitializeComponent();
-            SlidePanel1.Height = button1.Height;
-            SlidePanel1.Top = button1.Top;
-            SlidePanel1.Height = button1.Height;
-            button1.BringToFront();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -27,19 +24,18 @@ namespace Testing_Project
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void AgregarProd_Click(object sender, EventArgs e)
         {
-            SlidePanel1.Height = button1.Height;
-            SlidePanel1.Top = button1.Top;
-            button1.BringToFront();
+            AgregarProducto form = new AgregarProducto();
+            form.ShowDialog();
+            this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ModificarProd_Click(object sender, EventArgs e)
         {
-            SlidePanel1.Height = button2.Height;
-            SlidePanel1.Top = button2.Top;
-            button2.BringToFront();
-            
+            ModificarProducto form = new ModificarProducto();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

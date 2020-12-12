@@ -94,6 +94,78 @@
     <Compile Include="Accesos\Admin\FrmPrincipalAdmin.Designer.cs">
       <DependentUpon>FrmPrincipalAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Bebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Bebidas.designer.cs">
+      <DependentUpon>Bebidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Carnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Carnes.designer.cs">
+      <DependentUpon>Carnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Lacteos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Lacteos.designer.cs">
+      <DependentUpon>Lacteos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Limpieza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Limpieza.designer.cs">
+      <DependentUpon>Limpieza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Snacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Acciones supermercado\Snacks.designer.cs">
+      <DependentUpon>Snacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\AgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\AgregarProducto.Designer.cs">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\EliminarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\EliminarProducto.Designer.cs">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\ModificarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\ModificarProducto.Designer.cs">
+      <DependentUpon>ModificarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\Menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\Menu1.designer.cs">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\Menu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\Menu2.designer.cs">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\Menu3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\Menu3.designer.cs">
+      <DependentUpon>Menu3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\menu4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\menu4.designer.cs">
+      <DependentUpon>menu4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accesos\Mensajero\frmPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +273,42 @@
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Accesos\Admin\FrmPrincipalAdmin.resx">
       <DependentUpon>FrmPrincipalAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Acciones supermercado\Bebidas.resx">
+      <DependentUpon>Bebidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Acciones supermercado\Carnes.resx">
+      <DependentUpon>Carnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Acciones supermercado\Lacteos.resx">
+      <DependentUpon>Lacteos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Acciones supermercado\Limpieza.resx">
+      <DependentUpon>Limpieza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Acciones supermercado\Snacks.resx">
+      <DependentUpon>Snacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\ModificarProducto.resx">
+      <DependentUpon>ModificarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Restaurantes\Menu1.resx">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Restaurantes\Menu2.resx">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Restaurantes\Menu3.resx">
+      <DependentUpon>Menu3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Empresarial\Acciones\Restaurantes\menu4.resx">
+      <DependentUpon>menu4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Mensajero\frmPedidos.resx">
       <DependentUpon>frmPedidos.cs</DependentUpon>
