@@ -118,11 +118,11 @@ namespace Testing_Project
             }
         }
 
-        public static void AgregarPersona(String nombre, String apellido, String email, String telefono, String Pais, String Provincia, String Canton, String Distrito, String Apartamento, String Zipcode)
+        public static void AgregarPersona(String nombre, String apellido, String email, String telefono, String Pais, String Provincia, String Canton, String Distrito, String Apartamento, String Zipcode, string Tipo_usuario)
         {
             SqlConnection conx = new SqlConnection();
             conx = RetornaAcceso();
-            using (SqlCommand cmd = new SqlCommand("Insert INTO tbPersona ( nombre, " + " apellido, email, telefono, Pais, Provincia, Canton, Distrito, Apartamento, Zipcode) values ( @nombre," + " @apellido, @email, @telefono, @Pais, @Provincia, @Canton, @Distrito, @Apartamento, @Zipcode) "))
+            using (SqlCommand cmd = new SqlCommand("Insert INTO tbPersona ( nombre, " + " apellido, email, telefono, Pais, Provincia, Canton, Distrito, Apartamento, Zipcode, Tipo_usuario) values ( @nombre," + " @apellido, @email, @telefono, @Pais, @Provincia, @Canton, @Distrito, @Apartamento, @Zipcode, @Tipo_usuario) "))
             {
                 cmd.Parameters.AddWithValue("@nombre", nombre);
                 cmd.Parameters.AddWithValue("@apellido", apellido);
@@ -134,6 +134,7 @@ namespace Testing_Project
                 cmd.Parameters.AddWithValue("@Distrito", Distrito);
                 cmd.Parameters.AddWithValue("@Apartamento", Apartamento);
                 cmd.Parameters.AddWithValue("@Zipcode", Zipcode);
+                cmd.Parameters.AddWithValue("@Tipo_usuario", Tipo_usuario);
                 cmd.Connection = conx;
                 conx.Open();
                 cmd.ExecuteNonQuery();

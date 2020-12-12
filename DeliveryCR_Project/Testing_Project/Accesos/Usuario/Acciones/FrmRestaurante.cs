@@ -84,5 +84,29 @@ namespace Testing_Project.Accesos.Usuario.Acciones
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Restaurantes.Menu1 menu1 = new Restaurantes.Menu1();
+            menu1.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Restaurantes.Menu2 menu2 = new Restaurantes.Menu2();
+            menu2.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Restaurantes.Menu3 menu3 = new Restaurantes.Menu3();
+            menu3.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Restaurantes.menu4 menu4 = new Restaurantes.menu4();
+            menu4.ShowDialog();
+        }
     }
 }

@@ -24,7 +24,14 @@ namespace Testing_Project.Accesos.Usuario.Acciones
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            FrmSupermercado r = new FrmSupermercado();
+            r.ShowDialog();
+        }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FrmSupermercado r = new FrmSupermercado();
+            r.ShowDialog();
         }
     }
 }
