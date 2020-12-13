@@ -29,5 +29,15 @@ namespace Testing_Project.Usuarios.Cliente
             FrmCuenta cuenta = new FrmCuenta();
             cuenta.ShowDialog();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

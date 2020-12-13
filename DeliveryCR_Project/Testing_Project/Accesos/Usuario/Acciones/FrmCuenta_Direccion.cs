@@ -144,5 +144,10 @@ namespace Testing_Project.Accesos.Usuario.Acciones
                 MessageBox.Show("La Direccion Personal y las no registradas no se pueden eliminar", "Aviso");
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

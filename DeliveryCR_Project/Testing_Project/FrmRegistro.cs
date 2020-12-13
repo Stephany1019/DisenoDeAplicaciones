@@ -147,6 +147,45 @@ namespace Testing_Project
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            txtUsername.Clear();
+            txtNombre.Clear();
+            txtPass.Clear();
+            txtApellido.Clear();
+            txtCalle.Clear();
+            txtCanton.Clear();
+            txtEmail.Clear();
+            txtPais.Clear();
+            txtProvincia.Clear();
+            txtTelefono.Clear();
+            txtUsername.Clear();
+            txtZipcode.Clear();
+            txtEmail.Clear();
+            txtApartamento.Clear();
+           
+
+
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            FrmLogin abrir = new FrmLogin();
+            abrir.ShowDialog();
+            this.Close();
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     }
 

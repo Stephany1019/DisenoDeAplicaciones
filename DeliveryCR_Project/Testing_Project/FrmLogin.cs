@@ -32,6 +32,7 @@ namespace Testing_Project
         {
             FrmRegistro registro = new FrmRegistro();
             registro.ShowDialog();
+            Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
