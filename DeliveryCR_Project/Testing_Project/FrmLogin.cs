@@ -49,5 +49,11 @@ namespace Testing_Project
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            FrmCambiaPass CambPass = new FrmCambiaPass();
+            CambPass.ShowDialog();
+        }
     }
 }

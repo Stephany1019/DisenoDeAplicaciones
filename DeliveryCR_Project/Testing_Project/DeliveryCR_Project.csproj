@@ -255,6 +255,12 @@
     <Compile Include="Factura.Designer.cs">
       <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCambiaPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiaPass.Designer.cs">
+      <DependentUpon>FrmCambiaPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -392,6 +398,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Factura.resx">
       <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiaPass.resx">
+      <DependentUpon>FrmCambiaPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
