@@ -45,10 +45,9 @@
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(28, 192);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Location = new System.Drawing.Point(42, 295);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(56, 19);
+            this.btnAtras.Size = new System.Drawing.Size(84, 29);
             this.btnAtras.TabIndex = 5;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -63,9 +62,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.ForeColor = System.Drawing.Color.Maroon;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(188, 240);
+            this.panel2.Size = new System.Drawing.Size(282, 369);
             this.panel2.TabIndex = 36;
             // 
             // panel1
@@ -75,9 +73,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 62);
+            this.panel1.Size = new System.Drawing.Size(282, 95);
             this.panel1.TabIndex = 4;
             // 
             // label1
@@ -85,20 +82,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(80, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 17);
+            this.label1.Size = new System.Drawing.Size(145, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Sesión Usuario";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(2, 8);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(70, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -106,20 +101,18 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(188, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(282, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 254);
+            this.pictureBox1.Size = new System.Drawing.Size(366, 391);
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
             // cbxProducto
             // 
             this.cbxProducto.FormattingEnabled = true;
-            this.cbxProducto.Location = new System.Drawing.Point(193, 106);
-            this.cbxProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxProducto.Location = new System.Drawing.Point(290, 163);
             this.cbxProducto.Name = "cbxProducto";
-            this.cbxProducto.Size = new System.Drawing.Size(197, 21);
+            this.cbxProducto.Size = new System.Drawing.Size(294, 28);
             this.cbxProducto.TabIndex = 37;
             this.cbxProducto.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.cbxProducto.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbxProducto_MouseClick);
@@ -128,23 +121,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(193, 66);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(290, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(223, 17);
+            this.label2.Size = new System.Drawing.Size(338, 25);
             this.label2.TabIndex = 38;
             this.label2.Text = "Seleccione el producto que desea";
             // 
             // FrmProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 240);
+            this.ClientSize = new System.Drawing.Size(644, 369);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbxProducto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmProducto";
             this.Text = "FrmProducto";
             this.panel2.ResumeLayout(false);

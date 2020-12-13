@@ -119,7 +119,7 @@ namespace Testing_Project
                 SQLTransact.AgregarDireccion(txtUsername.Text, nombreDir, txtPais.Text, txtProvincia.Text, txtCanton.Text, txtCalle.Text, txtApartamento.Text, txtZipcode.Text);
 
                 MessageBox.Show("Registro Completado", "Aviso");
-                this.Close();
+             
             }
             else
             {
@@ -144,6 +144,59 @@ namespace Testing_Project
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            txtUsername.Clear();
+            txtNombre.Clear();
+            txtPass.Clear();
+            txtApellido.Clear();
+            txtCalle.Clear();
+            txtCanton.Clear();
+            txtEmail.Clear();
+            txtPais.Clear();
+            txtProvincia.Clear();
+            txtTelefono.Clear();
+            txtUsername.Clear();
+            txtZipcode.Clear();
+            txtEmail.Clear();
+            txtApartamento.Clear();
+           
+
+
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
+            FrmLogin abrir = new FrmLogin();
+            abrir.ShowDialog();
+
+        }
+
+        private void button1_Click_4(object sender, EventArgs e)
+        {
+            this.Dispose();
+            FrmLogin abrir = new FrmLogin();
+            abrir.ShowDialog();
+            
+        }
+
+        private void txtProvincia_TextChanged(object sender, EventArgs e)
         {
 
         }

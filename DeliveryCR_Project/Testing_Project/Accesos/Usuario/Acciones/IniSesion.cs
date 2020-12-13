@@ -57,5 +57,20 @@ namespace Testing_Project.Accesos.Usuario.Acciones
                 MessageBox.Show("Credenciales actuales invalidas", "Aviso");
             }
         }
+
+        private void Usuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

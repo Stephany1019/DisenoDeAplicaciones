@@ -145,6 +145,11 @@ namespace Testing_Project.Accesos.Usuario.Acciones
             }
         }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
@@ -205,14 +210,9 @@ namespace Testing_Project.Accesos.Usuario.Acciones
 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

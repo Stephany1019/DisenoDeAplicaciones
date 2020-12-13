@@ -53,5 +53,15 @@ namespace Testing_Project.Accesos.Usuario.Acciones
                 MessageBox.Show("No hay metodos de pago registrados", "Aviso");
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

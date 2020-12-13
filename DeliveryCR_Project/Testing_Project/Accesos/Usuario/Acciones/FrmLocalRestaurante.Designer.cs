@@ -54,10 +54,9 @@
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(26, 298);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Location = new System.Drawing.Point(39, 458);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(56, 19);
+            this.btnAtras.Size = new System.Drawing.Size(84, 29);
             this.btnAtras.TabIndex = 5;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -72,9 +71,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.ForeColor = System.Drawing.Color.Maroon;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(188, 366);
+            this.panel2.Size = new System.Drawing.Size(282, 563);
             this.panel2.TabIndex = 36;
             // 
             // panel1
@@ -84,9 +82,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 62);
+            this.panel1.Size = new System.Drawing.Size(282, 95);
             this.panel1.TabIndex = 4;
             // 
             // label1
@@ -94,20 +91,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(80, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 17);
+            this.label1.Size = new System.Drawing.Size(145, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Sesión Usuario";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(2, 8);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(70, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -118,9 +113,10 @@
             this.label2.BackColor = System.Drawing.Color.Azure;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label2.Location = new System.Drawing.Point(343, 71);
+            this.label2.Location = new System.Drawing.Point(514, 109);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 25);
+            this.label2.Size = new System.Drawing.Size(225, 40);
             this.label2.TabIndex = 40;
             this.label2.Text = "Comida Rápida";
             // 
@@ -133,9 +129,10 @@
             "KFC",
             "As",
             "Distrito 87"});
-            this.comboBox1.Location = new System.Drawing.Point(343, 114);
+            this.comboBox1.Location = new System.Drawing.Point(514, 175);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 21);
+            this.comboBox1.Size = new System.Drawing.Size(238, 28);
             this.comboBox1.TabIndex = 38;
             this.comboBox1.Text = "Seleccione el restaurante";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -146,9 +143,10 @@
             this.label3.BackColor = System.Drawing.Color.Azure;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label3.Location = new System.Drawing.Point(342, 15);
+            this.label3.Location = new System.Drawing.Point(513, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 30);
+            this.label3.Size = new System.Drawing.Size(222, 45);
             this.label3.TabIndex = 37;
             this.label3.Text = "Restaurantes";
             // 
@@ -158,9 +156,10 @@
             this.label4.BackColor = System.Drawing.Color.Azure;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label4.Location = new System.Drawing.Point(343, 176);
+            this.label4.Location = new System.Drawing.Point(514, 271);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 25);
+            this.label4.Size = new System.Drawing.Size(110, 40);
             this.label4.TabIndex = 42;
             this.label4.Text = "Casero";
             // 
@@ -171,9 +170,10 @@
             "Antojitos",
             "Soda Castro",
             "Princesa Marina"});
-            this.comboBox2.Location = new System.Drawing.Point(342, 210);
+            this.comboBox2.Location = new System.Drawing.Point(513, 323);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(132, 21);
+            this.comboBox2.Size = new System.Drawing.Size(196, 28);
             this.comboBox2.TabIndex = 43;
             this.comboBox2.Text = "Seleccione el restaurante";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
@@ -184,9 +184,10 @@
             this.label5.BackColor = System.Drawing.Color.Azure;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label5.Location = new System.Drawing.Point(343, 282);
+            this.label5.Location = new System.Drawing.Point(514, 434);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 25);
+            this.label5.Size = new System.Drawing.Size(93, 40);
             this.label5.TabIndex = 45;
             this.label5.Text = "Otros";
             // 
@@ -196,9 +197,10 @@
             this.comboBox3.Items.AddRange(new object[] {
             "Pane & Vino",
             "Fojoncito"});
-            this.comboBox3.Location = new System.Drawing.Point(342, 319);
+            this.comboBox3.Location = new System.Drawing.Point(513, 491);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(160, 21);
+            this.comboBox3.Size = new System.Drawing.Size(238, 28);
             this.comboBox3.TabIndex = 46;
             this.comboBox3.Text = "Seleccione el restaurante";
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
@@ -206,9 +208,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(207, 282);
+            this.pictureBox5.Location = new System.Drawing.Point(310, 434);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(75, 73);
+            this.pictureBox5.Size = new System.Drawing.Size(112, 112);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 44;
             this.pictureBox5.TabStop = false;
@@ -216,9 +219,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(207, 176);
+            this.pictureBox4.Location = new System.Drawing.Point(310, 271);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(71, 70);
+            this.pictureBox4.Size = new System.Drawing.Size(106, 108);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 41;
             this.pictureBox4.TabStop = false;
@@ -226,19 +230,21 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(207, 71);
+            this.pictureBox3.Location = new System.Drawing.Point(310, 109);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 74);
+            this.pictureBox3.Size = new System.Drawing.Size(105, 114);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 39;
             this.pictureBox3.TabStop = false;
             // 
             // FrmLocalRestaurante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(900, 563);
+            this.ControlBox = false;
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox5);
@@ -250,9 +256,9 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmLocalRestaurante";
-            this.Text = "FrmLocalRestaurante";
+            this.Text = "Local Restaurante";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
