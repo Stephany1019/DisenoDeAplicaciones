@@ -23,5 +23,11 @@ namespace Testing_Project.Usuarios.Cliente
         {
             FrmLocalRestaurante r = new FrmLocalRestaurante();
             r.ShowDialog();        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            FrmCuenta cuenta = new FrmCuenta();
+            cuenta.ShowDialog();
+        }
     }
 }

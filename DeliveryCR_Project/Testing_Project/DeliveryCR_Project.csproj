@@ -166,6 +166,24 @@
     <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\menu4.designer.cs">
       <DependentUpon>menu4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmNuevaDirec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmNuevaDirec.Designer.cs">
+      <DependentUpon>FrmNuevaDirec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmCuenta.Designer.cs">
+      <DependentUpon>FrmCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmCuenta_Direccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmCuenta_Direccion.Designer.cs">
+      <DependentUpon>FrmCuenta_Direccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accesos\Mensajero\frmPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,11 +220,22 @@
     <Compile Include="Accesos\Usuario\Acciones\FrmSupermercado.Designer.cs">
       <DependentUpon>FrmSupermercado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\IniSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\IniSesion.Designer.cs">
+      <DependentUpon>IniSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carrito.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Carrito.Designer.cs">
       <DependentUpon>Carrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryCRDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeliveryCRDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Factura.cs">
       <SubType>Form</SubType>
@@ -310,6 +339,12 @@
     <EmbeddedResource Include="Accesos\Empresarial\Acciones\Restaurantes\menu4.resx">
       <DependentUpon>menu4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmCuenta.resx">
+      <DependentUpon>FrmCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmCuenta_Direccion.resx">
+      <DependentUpon>FrmCuenta_Direccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Mensajero\frmPedidos.resx">
       <DependentUpon>frmPedidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +354,9 @@
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmLocalSupermercado.resx">
       <DependentUpon>FrmLocalSupermercado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmNuevaDirec.resx">
+      <DependentUpon>FrmNuevaDirec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmProducto.resx">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -327,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmSupermercado.resx">
       <DependentUpon>FrmSupermercado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Usuario\Acciones\IniSesion.resx">
+      <DependentUpon>IniSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Carrito.resx">
       <DependentUpon>Carrito.cs</DependentUpon>
@@ -362,6 +403,17 @@
     <EmbeddedResource Include="Accesos\Mensajero\FrmPrincipalMensajero.resx">
       <DependentUpon>FrmPrincipalMensajero.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DeliveryCRDataSet.xsc">
+      <DependentUpon>DeliveryCRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DeliveryCRDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeliveryCRDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeliveryCRDataSet.xss">
+      <DependentUpon>DeliveryCRDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -453,6 +505,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\032-potato chips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

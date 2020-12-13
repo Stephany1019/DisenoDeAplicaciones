@@ -13,6 +13,7 @@ namespace Testing_Project
     {
         public static bool Login_autorizado;
         public static String Tipo_Acceso;
+        public static String Usuario_Activo;
 
         public static SqlConnection RetornaAcceso()
         {
@@ -80,6 +81,27 @@ namespace Testing_Project
 
         }
 
+        public static Boolean nombreDirValido(String Usr, String Dir)
+        {
+            if (Dir != null)
+            {
+                String Resultado = "";
+                SqlConnection conx = new SqlConnection();
+                conx = RetornaAcceso();
+                SqlDataAdapter da = new SqlDataAdapter("Select COUNT(nombreDir) AS DATA from tbDireccion where nombreDir ='" + Dir + "' AND Username = '" + Usr + "'", conx);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+                ds.Dispose();
+                if (Resultado == "1") return true;
+                else return false;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static void AgregarLogin(String Username, String Pass, String tipoAcceso)
         {
             SqlConnection conx = new SqlConnection();
@@ -113,6 +135,73 @@ namespace Testing_Project
                 cmd.Parameters.AddWithValue("@Apartamento", Apartamento);
                 cmd.Parameters.AddWithValue("@Zipcode", Zipcode);
                 cmd.Parameters.AddWithValue("@Tipo_usuario", Tipo_usuario);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void AgregarDireccion(String Username, String nombreDir, String Pais, String Provincia, String Canton, String Distrito, String Apartamento, String Zipcode)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO tbDireccion ( Username, " + " nombreDir, Pais, Provincia, Canton, Distrito, Apartamento, Zipcode) values ( @Username," + " @nombreDir, @Pais, @Provincia, @Canton, @Distrito, @Apartamento, @Zipcode) "))
+            {
+                cmd.Parameters.AddWithValue("@Username", Username);
+                cmd.Parameters.AddWithValue("@nombreDir", nombreDir);
+                cmd.Parameters.AddWithValue("@Pais", Pais);
+                cmd.Parameters.AddWithValue("@Provincia", Provincia);
+                cmd.Parameters.AddWithValue("@Canton", Canton);
+                cmd.Parameters.AddWithValue("@Distrito", Distrito);
+                cmd.Parameters.AddWithValue("@Apartamento", Apartamento);
+                cmd.Parameters.AddWithValue("@Zipcode", Zipcode);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void ActualizarDireccion(String Username, String nombreDir, String Pais, String Provincia, String Canton, String Distrito, String Apartamento, String Zipcode)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("UPDATE tbDireccion SET Pais = @Pais, Provincia = @Provincia, Canton = @Canton, Distrito = @Distrito, Apartamento = @Apartamento, Zipcode = @Zipcode WHERE Username ='" + Username + "' AND nombreDir ='" + nombreDir + "'"))
+            {
+                cmd.Parameters.AddWithValue("@Pais", Pais);
+                cmd.Parameters.AddWithValue("@Provincia", Provincia);
+                cmd.Parameters.AddWithValue("@Canton", Canton);
+                cmd.Parameters.AddWithValue("@Distrito", Distrito);
+                cmd.Parameters.AddWithValue("@Apartamento", Apartamento);
+                cmd.Parameters.AddWithValue("@Zipcode", Zipcode);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void EliminarDireccion(String Username, String nombreDir)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("DELETE FROM tbDireccion WHERE Username ='" + Username + "' AND nombreDir ='" + nombreDir + "'"))
+            {
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void ActualizarPass(String Username, String Pass)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("UPDATE tbLogin SET Pass = @Pass WHERE Username ='" + Username + "'"))
+            {
+                cmd.Parameters.AddWithValue("@Pass", Pass);
                 cmd.Connection = conx;
                 conx.Open();
                 cmd.ExecuteNonQuery();
@@ -181,6 +270,84 @@ namespace Testing_Project
                 cmd.ExecuteNonQuery();
                 conx.Close();
             }
+        }
+
+        public static String RetornaPais(String Usr,String Dir)
+        {
+
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Pais AS DATA from tbDireccion where nombreDir ='" + Dir + "' AND Username = '" + Usr + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String RetornaProvincia(String Usr, String Dir)
+        {
+
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Provincia AS DATA from tbDireccion where nombreDir ='" + Dir + "' AND Username = '" + Usr + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String RetornaCanton(String Usr, String Dir)
+        {
+
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Canton AS DATA from tbDireccion where nombreDir ='" + Dir + "' AND Username = '" + Usr + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String RetornaDistrito(String Usr, String Dir)
+        {
+
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Distrito AS DATA from tbDireccion where nombreDir ='" + Dir + "' AND Username = '" + Usr + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String RetornaApartamento(String Usr, String Dir)
+        {
+
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Apartamento AS DATA from tbDireccion where nombreDir ='" + Dir + "' AND Username = '" + Usr + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String RetornaZipcode(String Usr, String Dir)
+        {
+
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Zipcode AS DATA from tbDireccion where nombreDir ='" + Dir + "' AND Username = '" + Usr + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
         }
     }
 }

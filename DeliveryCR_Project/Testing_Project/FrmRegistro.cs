@@ -20,7 +20,7 @@ namespace Testing_Project
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
-
+            comboBox1.SelectedIndex = comboBox1.Items.IndexOf("Usuario");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -113,8 +113,11 @@ namespace Testing_Project
         {
             if (SQLTransact.UsuarioValido(txtUsername.Text) && SQLTransact.CorreoValido(txtEmail.Text))
             {
+                String nombreDir = "Personal";
                 SQLTransact.AgregarLogin(txtUsername.Text, txtPass.Text, comboBox1.Text);
                 SQLTransact.AgregarPersona(txtNombre.Text, txtApellido.Text, txtEmail.Text, txtTelefono.Text, txtPais.Text, txtProvincia.Text, txtCanton.Text, txtCalle.Text, txtApartamento.Text, txtZipcode.Text, comboBox1.Text);
+                SQLTransact.AgregarDireccion(txtUsername.Text, nombreDir, txtPais.Text, txtProvincia.Text, txtCanton.Text, txtCalle.Text, txtApartamento.Text, txtZipcode.Text);
+
                 MessageBox.Show("Registro Completado", "Aviso");
                 this.Close();
             }
