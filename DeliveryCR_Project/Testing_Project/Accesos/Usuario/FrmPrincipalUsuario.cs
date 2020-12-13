@@ -66,5 +66,11 @@ namespace Testing_Project.Usuarios.Cliente
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            FrmLocalSupermercado LocalSuper = new FrmLocalSupermercado();
+            LocalSuper.ShowDialog();
+        }
     }
 }
