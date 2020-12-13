@@ -24,7 +24,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -48,6 +48,11 @@ namespace Testing_Project.Accesos.Usuario.Acciones
         {
             IniSesion Sesion = new IniSesion();
             Sesion.ShowDialog();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void button3_Click(object sender, EventArgs e)
