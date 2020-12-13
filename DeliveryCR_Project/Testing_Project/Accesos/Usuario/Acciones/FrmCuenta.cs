@@ -49,5 +49,11 @@ namespace Testing_Project.Accesos.Usuario.Acciones
             IniSesion Sesion = new IniSesion();
             Sesion.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmMetPago MetPago = new FrmMetPago();
+            MetPago.ShowDialog();
+        }
     }
 }
