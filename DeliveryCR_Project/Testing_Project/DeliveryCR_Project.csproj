@@ -166,6 +166,12 @@
     <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\menu4.designer.cs">
       <DependentUpon>menu4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmMetPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmMetPago.Designer.cs">
+      <DependentUpon>FrmMetPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accesos\Usuario\Acciones\FrmNuevaDirec.cs">
       <SubType>Form</SubType>
     </Compile>
