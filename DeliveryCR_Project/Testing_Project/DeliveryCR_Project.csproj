@@ -166,6 +166,12 @@
     <Compile Include="Accesos\Empresarial\Acciones\Restaurantes\menu4.designer.cs">
       <DependentUpon>menu4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmEliminarMetPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmEliminarMetPago.Designer.cs">
+      <DependentUpon>FrmEliminarMetPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accesos\Usuario\Acciones\FrmMetPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,11 +360,17 @@
     <EmbeddedResource Include="Accesos\Mensajero\frmPedidos.resx">
       <DependentUpon>frmPedidos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmEliminarMetPago.resx">
+      <DependentUpon>FrmEliminarMetPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmLocalRestaurante.resx">
       <DependentUpon>FrmLocalRestaurante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmLocalSupermercado.resx">
       <DependentUpon>FrmLocalSupermercado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmMetPago.resx">
+      <DependentUpon>FrmMetPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmNuevaDirec.resx">
       <DependentUpon>FrmNuevaDirec.cs</DependentUpon>

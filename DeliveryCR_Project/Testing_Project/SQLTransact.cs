@@ -102,6 +102,27 @@ namespace Testing_Project
             }
         }
 
+        public static Boolean MetPagoValido(String Usr)
+        {
+            if (Usr != null)
+            {
+                String Resultado = "";
+                SqlConnection conx = new SqlConnection();
+                conx = RetornaAcceso();
+                SqlDataAdapter da = new SqlDataAdapter("Select COUNT(nombreMet) AS DATA from tbMetPagos where Username = '" + Usr + "'", conx);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+                ds.Dispose();
+                if (Resultado == "0") return false;
+                else return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static void AgregarLogin(String Username, String Pass, String tipoAcceso)
         {
             SqlConnection conx = new SqlConnection();
@@ -135,6 +156,38 @@ namespace Testing_Project
                 cmd.Parameters.AddWithValue("@Apartamento", Apartamento);
                 cmd.Parameters.AddWithValue("@Zipcode", Zipcode);
                 cmd.Parameters.AddWithValue("@Tipo_usuario", Tipo_usuario);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void AgregarMetPago(String Username, String nombreMet, String NombreTar, String Emisor, String CodSeg, String NumTar)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO tbMetPagos ( Username, " + " nombreMet, NombreTar, Emisor, CodSeg, NumTar) values ( @Username," + " @nombreMet, @NombreTar, @Emisor, @CodSeg, @NumTar) "))
+            {
+                cmd.Parameters.AddWithValue("@Username", Username);
+                cmd.Parameters.AddWithValue("@nombreMet", nombreMet);
+                cmd.Parameters.AddWithValue("@NombreTar", NombreTar);
+                cmd.Parameters.AddWithValue("@Emisor", Emisor);
+                cmd.Parameters.AddWithValue("@CodSeg", CodSeg);
+                cmd.Parameters.AddWithValue("@NumTar", NumTar);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static void EliminarMetPago(String Username, String nombreMet)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("DELETE FROM tbMetPagos WHERE Username ='" + Username + "' AND nombreMet ='" + nombreMet + "'"))
+            {
                 cmd.Connection = conx;
                 conx.Open();
                 cmd.ExecuteNonQuery();

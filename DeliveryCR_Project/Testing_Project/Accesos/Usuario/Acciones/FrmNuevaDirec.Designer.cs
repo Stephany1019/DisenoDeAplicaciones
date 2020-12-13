@@ -72,6 +72,7 @@
             // 
             this.tbDireccionBindingSource.DataMember = "tbDireccion";
             this.tbDireccionBindingSource.DataSource = this.deliveryCRDataSet;
+            this.tbDireccionBindingSource.CurrentChanged += new System.EventHandler(this.tbDireccionBindingSource_CurrentChanged);
             // 
             // deliveryCRDataSet
             // 
@@ -89,6 +90,7 @@
             this.label2.Size = new System.Drawing.Size(272, 50);
             this.label2.TabIndex = 32;
             this.label2.Text = "NUEVA DIRECCION";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtZipcode
             // 
@@ -96,6 +98,7 @@
             this.txtZipcode.Name = "txtZipcode";
             this.txtZipcode.Size = new System.Drawing.Size(145, 20);
             this.txtZipcode.TabIndex = 112;
+            this.txtZipcode.TextChanged += new System.EventHandler(this.txtZipcode_TextChanged);
             // 
             // txtApartamento
             // 
@@ -103,6 +106,7 @@
             this.txtApartamento.Name = "txtApartamento";
             this.txtApartamento.Size = new System.Drawing.Size(147, 20);
             this.txtApartamento.TabIndex = 111;
+            this.txtApartamento.TextChanged += new System.EventHandler(this.txtApartamento_TextChanged);
             // 
             // txtCalle
             // 
@@ -110,6 +114,7 @@
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(147, 20);
             this.txtCalle.TabIndex = 110;
+            this.txtCalle.TextChanged += new System.EventHandler(this.txtCalle_TextChanged);
             // 
             // txtCanton
             // 
@@ -117,6 +122,7 @@
             this.txtCanton.Name = "txtCanton";
             this.txtCanton.Size = new System.Drawing.Size(150, 20);
             this.txtCanton.TabIndex = 109;
+            this.txtCanton.TextChanged += new System.EventHandler(this.txtCanton_TextChanged);
             // 
             // label18
             // 
@@ -127,6 +133,7 @@
             this.label18.Size = new System.Drawing.Size(99, 17);
             this.label18.TabIndex = 108;
             this.label18.Text = "Código Postal:";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label17
             // 
@@ -137,6 +144,7 @@
             this.label17.Size = new System.Drawing.Size(93, 17);
             this.label17.TabIndex = 107;
             this.label17.Text = "Apartamento:";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label16
             // 
@@ -147,6 +155,7 @@
             this.label16.Size = new System.Drawing.Size(56, 17);
             this.label16.TabIndex = 106;
             this.label16.Text = "Distrito:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label15
             // 
@@ -157,6 +166,7 @@
             this.label15.Size = new System.Drawing.Size(57, 17);
             this.label15.TabIndex = 105;
             this.label15.Text = "Cantón:";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // txtProvincia
             // 
@@ -164,6 +174,7 @@
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(150, 20);
             this.txtProvincia.TabIndex = 104;
+            this.txtProvincia.TextChanged += new System.EventHandler(this.txtProvincia_TextChanged);
             // 
             // label14
             // 
@@ -174,6 +185,7 @@
             this.label14.Size = new System.Drawing.Size(70, 17);
             this.label14.TabIndex = 103;
             this.label14.Text = "Provincia:";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // txtPais
             // 
@@ -181,6 +193,7 @@
             this.txtPais.Name = "txtPais";
             this.txtPais.Size = new System.Drawing.Size(150, 20);
             this.txtPais.TabIndex = 102;
+            this.txtPais.TextChanged += new System.EventHandler(this.txtPais_TextChanged);
             // 
             // label13
             // 
@@ -191,6 +204,7 @@
             this.label13.Size = new System.Drawing.Size(39, 17);
             this.label13.TabIndex = 101;
             this.label13.Text = "País:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label12
             // 
@@ -202,6 +216,7 @@
             this.label12.Size = new System.Drawing.Size(76, 17);
             this.label12.TabIndex = 100;
             this.label12.Text = "Dirección";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel1
             // 
@@ -216,6 +231,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(506, 81);
             this.panel1.TabIndex = 99;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -227,6 +243,7 @@
             this.label1.Size = new System.Drawing.Size(278, 17);
             this.label1.TabIndex = 97;
             this.label1.Text = "Crea nuevas direcciones para tus pedidos.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // nombreDir
             // 
@@ -245,6 +262,7 @@
             this.Nombre_Clave.Size = new System.Drawing.Size(101, 17);
             this.Nombre_Clave.TabIndex = 118;
             this.Nombre_Clave.Text = "Nombre Clave:";
+            this.Nombre_Clave.Click += new System.EventHandler(this.Nombre_Clave_Click);
             // 
             // button1
             // 
@@ -297,6 +315,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 35;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -309,6 +328,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -320,6 +340,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FrmNuevaDirec
             // 

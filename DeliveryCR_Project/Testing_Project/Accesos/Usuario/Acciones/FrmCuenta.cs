@@ -54,5 +54,11 @@ namespace Testing_Project.Accesos.Usuario.Acciones
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmMetPago MetPago = new FrmMetPago();
+            MetPago.ShowDialog();
+        }
     }
 }

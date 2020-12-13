@@ -72,6 +72,7 @@
             this.txtZipcode.Name = "txtZipcode";
             this.txtZipcode.Size = new System.Drawing.Size(216, 26);
             this.txtZipcode.TabIndex = 91;
+            this.txtZipcode.TextChanged += new System.EventHandler(this.txtZipcode_TextChanged);
             // 
             // txtApartamento
             // 
@@ -80,6 +81,7 @@
             this.txtApartamento.Name = "txtApartamento";
             this.txtApartamento.Size = new System.Drawing.Size(218, 26);
             this.txtApartamento.TabIndex = 90;
+            this.txtApartamento.TextChanged += new System.EventHandler(this.txtApartamento_TextChanged);
             // 
             // txtCalle
             // 
@@ -97,6 +99,7 @@
             this.txtCanton.Name = "txtCanton";
             this.txtCanton.Size = new System.Drawing.Size(223, 26);
             this.txtCanton.TabIndex = 88;
+            this.txtCanton.TextChanged += new System.EventHandler(this.txtCanton_TextChanged);
             // 
             // label18
             // 
@@ -108,6 +111,7 @@
             this.label18.Size = new System.Drawing.Size(140, 25);
             this.label18.TabIndex = 87;
             this.label18.Text = "Código Postal:";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label17
             // 
@@ -119,6 +123,7 @@
             this.label17.Size = new System.Drawing.Size(130, 25);
             this.label17.TabIndex = 86;
             this.label17.Text = "Apartamento:";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label16
             // 
@@ -130,6 +135,7 @@
             this.label16.Size = new System.Drawing.Size(77, 25);
             this.label16.TabIndex = 85;
             this.label16.Text = "Distrito:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label15
             // 
@@ -141,6 +147,7 @@
             this.label15.Size = new System.Drawing.Size(82, 25);
             this.label15.TabIndex = 84;
             this.label15.Text = "Cantón:";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // txtProvincia
             // 
@@ -149,6 +156,7 @@
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(223, 26);
             this.txtProvincia.TabIndex = 83;
+            this.txtProvincia.TextChanged += new System.EventHandler(this.txtProvincia_TextChanged);
             // 
             // label14
             // 
@@ -160,6 +168,7 @@
             this.label14.Size = new System.Drawing.Size(98, 25);
             this.label14.TabIndex = 82;
             this.label14.Text = "Provincia:";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // txtPais
             // 
@@ -180,6 +189,7 @@
             this.label13.Size = new System.Drawing.Size(56, 25);
             this.label13.TabIndex = 80;
             this.label13.Text = "País:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label12
             // 
@@ -190,6 +200,7 @@
             this.label12.Size = new System.Drawing.Size(102, 25);
             this.label12.TabIndex = 79;
             this.label12.Text = "Dirección";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel1
             // 
@@ -203,6 +214,45 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1065, 125);
             this.panel1.TabIndex = 64;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(617, 18);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(29, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 35;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Red;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(663, 18);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
             // 
@@ -247,6 +297,7 @@
             this.label2.Size = new System.Drawing.Size(614, 76);
             this.label2.TabIndex = 32;
             this.label2.Text = "ADMINISTRAR DIRECCIONES";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -268,6 +319,7 @@
             this.label1.Size = new System.Drawing.Size(463, 25);
             this.label1.TabIndex = 61;
             this.label1.Text = "Verifica o modifica las  direcciones para tus pedidos.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // deliveryCRDataSet
             // 
@@ -278,6 +330,7 @@
             // 
             this.tbDireccionBindingSource.DataMember = "tbDireccion";
             this.tbDireccionBindingSource.DataSource = this.deliveryCRDataSet;
+            this.tbDireccionBindingSource.CurrentChanged += new System.EventHandler(this.tbDireccionBindingSource_CurrentChanged);
             // 
             // tbDireccionTableAdapter
             // 
@@ -292,6 +345,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(271, 28);
             this.comboBox1.TabIndex = 95;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // button2
             // 
