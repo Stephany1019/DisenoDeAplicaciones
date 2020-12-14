@@ -212,7 +212,6 @@ C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testi
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmRestaurante.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmSupermercado.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.IniSesion.resources
-C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Carrito.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Factura.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmLogin.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Cliente.FrmPrincipalUsuario.resources
@@ -220,7 +219,6 @@ C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testi
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton2.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmPrincipalEmpresarial.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmRegistro.resources
-C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Principal.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Properties.Resources.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.FrmPrincipalMensajero.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.GenerateResource.cache
@@ -343,3 +341,4 @@ C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\Deliver
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmNuevaDirec.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.IniSesion.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmCambiaPass.resources
+C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Carrito.resources

@@ -151,7 +151,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 20);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Cambiar Contrasena";
+            this.label3.Text = "Cambiar Contraseña";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // FrmLogin

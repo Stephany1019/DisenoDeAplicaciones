@@ -62,6 +62,16 @@ namespace Testing_Project
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void NuevaPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

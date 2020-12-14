@@ -72,5 +72,12 @@ namespace Testing_Project.Usuarios.Cliente
             FrmLocalSupermercado LocalSuper = new FrmLocalSupermercado();
             LocalSuper.ShowDialog();
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            
+            Accesos.Usuario.Carrito form = new Accesos.Usuario.Carrito();
+            form.ShowDialog();
+        }
     }
 }

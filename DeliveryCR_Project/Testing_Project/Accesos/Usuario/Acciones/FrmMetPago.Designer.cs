@@ -62,47 +62,43 @@
             // 
             // nombreMet
             // 
-            this.nombreMet.Location = new System.Drawing.Point(24, 283);
-            this.nombreMet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nombreMet.Location = new System.Drawing.Point(16, 184);
             this.nombreMet.Name = "nombreMet";
-            this.nombreMet.Size = new System.Drawing.Size(223, 26);
+            this.nombreMet.Size = new System.Drawing.Size(150, 20);
             this.nombreMet.TabIndex = 138;
             // 
             // Nombre_Clave
             // 
             this.Nombre_Clave.AutoSize = true;
             this.Nombre_Clave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre_Clave.Location = new System.Drawing.Point(20, 238);
-            this.Nombre_Clave.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Nombre_Clave.Location = new System.Drawing.Point(13, 155);
             this.Nombre_Clave.Name = "Nombre_Clave";
-            this.Nombre_Clave.Size = new System.Drawing.Size(292, 25);
+            this.Nombre_Clave.Size = new System.Drawing.Size(209, 17);
             this.Nombre_Clave.TabIndex = 137;
             this.Nombre_Clave.Text = "Nombre Clave Metodo de Pago:";
             // 
             // CodSeg
             // 
-            this.CodSeg.Location = new System.Drawing.Point(384, 365);
-            this.CodSeg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CodSeg.Location = new System.Drawing.Point(256, 237);
             this.CodSeg.Name = "CodSeg";
-            this.CodSeg.Size = new System.Drawing.Size(218, 26);
+            this.CodSeg.PasswordChar = '*';
+            this.CodSeg.Size = new System.Drawing.Size(147, 20);
             this.CodSeg.TabIndex = 132;
             // 
             // NumTar
             // 
-            this.NumTar.Location = new System.Drawing.Point(387, 443);
-            this.NumTar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NumTar.Location = new System.Drawing.Point(258, 288);
             this.NumTar.Name = "NumTar";
-            this.NumTar.Size = new System.Drawing.Size(223, 26);
+            this.NumTar.Size = new System.Drawing.Size(150, 20);
             this.NumTar.TabIndex = 131;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(380, 334);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(253, 217);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(199, 25);
+            this.label16.Size = new System.Drawing.Size(143, 17);
             this.label16.TabIndex = 128;
             this.label16.Text = "Código de seguridad:";
             // 
@@ -110,10 +106,9 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(382, 412);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(255, 268);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(172, 25);
+            this.label15.Size = new System.Drawing.Size(126, 17);
             this.label15.TabIndex = 127;
             this.label15.Text = "Número de tarjeta:";
             // 
@@ -121,28 +116,27 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(18, 412);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(12, 268);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(183, 25);
+            this.label14.Size = new System.Drawing.Size(134, 17);
             this.label14.TabIndex = 125;
             this.label14.Text = "Emisor de la tarjeta:";
             // 
             // NombreTar
             // 
-            this.NombreTar.Location = new System.Drawing.Point(24, 363);
-            this.NombreTar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NombreTar.Location = new System.Drawing.Point(16, 236);
             this.NombreTar.Name = "NombreTar";
-            this.NombreTar.Size = new System.Drawing.Size(223, 26);
+            this.NombreTar.Size = new System.Drawing.Size(150, 20);
             this.NombreTar.TabIndex = 124;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(15, 180);
+            this.label12.Location = new System.Drawing.Point(10, 117);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(236, 25);
+            this.label12.Size = new System.Drawing.Size(177, 17);
             this.label12.TabIndex = 122;
             this.label12.Text = "Tarjetas Debito/Credito";
             // 
@@ -155,17 +149,19 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 125);
+            this.panel1.Size = new System.Drawing.Size(532, 81);
             this.panel1.TabIndex = 121;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(646, 17);
+            this.pictureBox3.Location = new System.Drawing.Point(431, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 49);
+            this.pictureBox3.Size = new System.Drawing.Size(29, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 35;
             this.pictureBox3.TabStop = false;
@@ -175,9 +171,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Red;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(710, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(473, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(38, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
@@ -186,9 +183,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(115, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
@@ -198,9 +196,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(190, 17);
+            this.label2.Location = new System.Drawing.Point(127, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(420, 76);
+            this.label2.Size = new System.Drawing.Size(281, 50);
             this.label2.TabIndex = 32;
             this.label2.Text = "METODOS DE PAGO";
             // 
@@ -208,9 +207,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 129);
+            this.label1.Location = new System.Drawing.Point(10, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(445, 25);
+            this.label1.Size = new System.Drawing.Size(326, 17);
             this.label1.TabIndex = 120;
             this.label1.Text = "Registra nuevos metodos de pago para tus envios";
             // 
@@ -228,10 +228,9 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(18, 334);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(12, 217);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(255, 25);
+            this.label13.Size = new System.Drawing.Size(186, 17);
             this.label13.TabIndex = 123;
             this.label13.Text = "Nombre de Tarjetahabiente:";
             // 
@@ -248,10 +247,11 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(24, 546);
+            this.button5.Location = new System.Drawing.Point(16, 355);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(238, 82);
+            this.button5.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(159, 53);
             this.button5.TabIndex = 135;
             this.button5.Text = "Guardar";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -267,10 +267,11 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(387, 546);
+            this.button1.Location = new System.Drawing.Point(258, 355);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(318, 82);
+            this.button1.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(212, 53);
             this.button1.TabIndex = 136;
             this.button1.Text = "Eliminar Tarjeta";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,17 +286,16 @@
             "VISA",
             "MASTERCARD",
             "AMERICAN EXPRESS"});
-            this.Emisor.Location = new System.Drawing.Point(20, 443);
-            this.Emisor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Emisor.Location = new System.Drawing.Point(13, 288);
             this.Emisor.Name = "Emisor";
-            this.Emisor.Size = new System.Drawing.Size(228, 28);
+            this.Emisor.Size = new System.Drawing.Size(153, 21);
             this.Emisor.TabIndex = 139;
             // 
             // FrmMetPago
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 680);
+            this.ClientSize = new System.Drawing.Size(532, 442);
             this.ControlBox = false;
             this.Controls.Add(this.Emisor);
             this.Controls.Add(this.nombreMet);
@@ -313,7 +313,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmMetPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMetPago";
