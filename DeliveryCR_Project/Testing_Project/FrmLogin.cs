@@ -27,6 +27,9 @@ namespace Testing_Project
                 SQLTransact.Tipo_Acceso = SQLTransact.TipoAcceso(txtUsario.Text);
                 this.Close();
             }
+            else {
+                MessageBox.Show("Usuario o Contraseña invalidos", "Aviso");
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
