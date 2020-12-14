@@ -309,7 +309,7 @@ namespace Testing_Project
             using (SqlCommand cmd = new SqlCommand("Insert INTO Pedidos (ID, Mensajero, Usuario, Local, Producto, Costo_Producto, Precio_Total, Estado) values (@ID, @Mensajero, @Usuario, @Local, @Producto, @Costo_Producto, @Precio_Total, @Estado) "))
             {
                 cmd.Parameters.AddWithValue("@ID", int.Parse(id) + 1);
-                cmd.Parameters.AddWithValue("@Mensajero", 2);
+                cmd.Parameters.AddWithValue("@Mensajero", 25);
                 cmd.Parameters.AddWithValue("@Usuario", usuario);
                 cmd.Parameters.AddWithValue("@Local", local);
                 cmd.Parameters.AddWithValue("@Producto", producto);
