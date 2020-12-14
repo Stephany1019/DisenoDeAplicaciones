@@ -17,6 +17,7 @@ namespace Testing_Project
         public FrmPrincipalEmpresarial()
         {
             InitializeComponent();
+            label1.Text = "Hola, "+SQLTransact.Usuario_Activo;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -34,6 +35,20 @@ namespace Testing_Project
         private void ModificarProd_Click(object sender, EventArgs e)
         {
             ModificarProducto form = new ModificarProducto();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void EliminarProd_Click(object sender, EventArgs e)
+        {
+            EliminarProducto form = new EliminarProducto();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            FrmLogin form = new FrmLogin();
             form.ShowDialog();
             this.Close();
         }

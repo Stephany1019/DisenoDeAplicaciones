@@ -75,6 +75,7 @@
             this.Atras.TabIndex = 8;
             this.Atras.Text = "Atrás";
             this.Atras.UseVisualStyleBackColor = true;
+            this.Atras.Click += new System.EventHandler(this.Atras_Click);
             // 
             // guardarProd
             // 
@@ -84,6 +85,7 @@
             this.guardarProd.TabIndex = 5;
             this.guardarProd.Text = "Guardar Producto";
             this.guardarProd.UseVisualStyleBackColor = true;
+            this.guardarProd.Click += new System.EventHandler(this.GuardarProd_Click);
             // 
             // panel1
             // 
@@ -123,7 +125,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, -98);
+            this.pictureBox1.Location = new System.Drawing.Point(5, -98);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(791, 647);
@@ -134,7 +136,7 @@
             // tipoCombo
             // 
             this.tipoCombo.FormattingEnabled = true;
-            this.tipoCombo.Location = new System.Drawing.Point(314, 260);
+            this.tipoCombo.Location = new System.Drawing.Point(312, 260);
             this.tipoCombo.Name = "tipoCombo";
             this.tipoCombo.Size = new System.Drawing.Size(166, 21);
             this.tipoCombo.TabIndex = 24;
@@ -144,7 +146,7 @@
             this.tipolbl.AutoSize = true;
             this.tipolbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tipolbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tipolbl.Location = new System.Drawing.Point(242, 263);
+            this.tipolbl.Location = new System.Drawing.Point(240, 263);
             this.tipolbl.Name = "tipolbl";
             this.tipolbl.Size = new System.Drawing.Size(28, 13);
             this.tipolbl.TabIndex = 23;
@@ -155,7 +157,7 @@
             this.preciolbl.AutoSize = true;
             this.preciolbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.preciolbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.preciolbl.Location = new System.Drawing.Point(242, 211);
+            this.preciolbl.Location = new System.Drawing.Point(240, 211);
             this.preciolbl.Name = "preciolbl";
             this.preciolbl.Size = new System.Drawing.Size(37, 13);
             this.preciolbl.TabIndex = 22;
@@ -163,7 +165,7 @@
             // 
             // preciotxt
             // 
-            this.preciotxt.Location = new System.Drawing.Point(314, 208);
+            this.preciotxt.Location = new System.Drawing.Point(312, 208);
             this.preciotxt.Name = "preciotxt";
             this.preciotxt.Size = new System.Drawing.Size(166, 20);
             this.preciotxt.TabIndex = 21;
@@ -173,7 +175,7 @@
             this.descLb.AutoSize = true;
             this.descLb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.descLb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.descLb.Location = new System.Drawing.Point(242, 168);
+            this.descLb.Location = new System.Drawing.Point(240, 168);
             this.descLb.Name = "descLb";
             this.descLb.Size = new System.Drawing.Size(63, 13);
             this.descLb.TabIndex = 20;
@@ -181,7 +183,7 @@
             // 
             // desctxt
             // 
-            this.desctxt.Location = new System.Drawing.Point(314, 161);
+            this.desctxt.Location = new System.Drawing.Point(312, 161);
             this.desctxt.Name = "desctxt";
             this.desctxt.Size = new System.Drawing.Size(166, 20);
             this.desctxt.TabIndex = 19;
@@ -191,7 +193,7 @@
             this.nombrelbl.AutoSize = true;
             this.nombrelbl.BackColor = System.Drawing.Color.Black;
             this.nombrelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nombrelbl.Location = new System.Drawing.Point(242, 119);
+            this.nombrelbl.Location = new System.Drawing.Point(240, 119);
             this.nombrelbl.Name = "nombrelbl";
             this.nombrelbl.Size = new System.Drawing.Size(44, 13);
             this.nombrelbl.TabIndex = 18;
@@ -199,7 +201,7 @@
             // 
             // nombretxt
             // 
-            this.nombretxt.Location = new System.Drawing.Point(314, 116);
+            this.nombretxt.Location = new System.Drawing.Point(312, 116);
             this.nombretxt.Name = "nombretxt";
             this.nombretxt.Size = new System.Drawing.Size(166, 20);
             this.nombretxt.TabIndex = 17;
@@ -209,7 +211,7 @@
             this.id.AutoSize = true;
             this.id.BackColor = System.Drawing.Color.Black;
             this.id.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.id.Location = new System.Drawing.Point(242, 84);
+            this.id.Location = new System.Drawing.Point(240, 74);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(18, 13);
             this.id.TabIndex = 26;
@@ -217,7 +219,7 @@
             // 
             // idTxt
             // 
-            this.idTxt.Location = new System.Drawing.Point(314, 81);
+            this.idTxt.Location = new System.Drawing.Point(314, 71);
             this.idTxt.Name = "idTxt";
             this.idTxt.Size = new System.Drawing.Size(166, 20);
             this.idTxt.TabIndex = 25;

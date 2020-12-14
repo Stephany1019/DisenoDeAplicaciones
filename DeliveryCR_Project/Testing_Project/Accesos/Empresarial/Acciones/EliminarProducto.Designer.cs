@@ -34,11 +34,11 @@
             this.eliminarProd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.idlbl = new System.Windows.Forms.Label();
             this.idtxt = new System.Windows.Forms.TextBox();
             this.nombrelbl = new System.Windows.Forms.Label();
             this.nombretxt = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -69,6 +69,7 @@
             this.Atras.TabIndex = 8;
             this.Atras.Text = "Atrás";
             this.Atras.UseVisualStyleBackColor = true;
+            this.Atras.Click += new System.EventHandler(this.Atras_Click);
             // 
             // eliminarProd
             // 
@@ -78,6 +79,7 @@
             this.eliminarProd.TabIndex = 5;
             this.eliminarProd.Text = "Eliminar Producto";
             this.eliminarProd.UseVisualStyleBackColor = true;
+            this.eliminarProd.Click += new System.EventHandler(this.EliminarProd_Click);
             // 
             // panel1
             // 
@@ -102,6 +104,17 @@
             this.label1.Size = new System.Drawing.Size(135, 19);
             this.label1.TabIndex = 4;
             this.label1.Text = "Sesion empresarial";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(2, 8);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
             // idlbl
             // 
@@ -138,17 +151,6 @@
             this.nombretxt.Name = "nombretxt";
             this.nombretxt.Size = new System.Drawing.Size(166, 20);
             this.nombretxt.TabIndex = 17;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(2, 8);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 

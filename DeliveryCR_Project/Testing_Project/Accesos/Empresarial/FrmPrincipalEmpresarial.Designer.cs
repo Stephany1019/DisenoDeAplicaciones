@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipalEmpresarial));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Salir = new System.Windows.Forms.Button();
+            this.EliminarProd = new System.Windows.Forms.Button();
+            this.modificarProd = new System.Windows.Forms.Button();
+            this.agregarProd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.agregarProd = new System.Windows.Forms.Button();
-            this.modificarProd = new System.Windows.Forms.Button();
-            this.EliminarProd = new System.Windows.Forms.Button();
-            this.Salir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -57,10 +57,50 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.ForeColor = System.Drawing.Color.Maroon;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(188, 434);
             this.panel2.TabIndex = 3;
+            // 
+            // Salir
+            // 
+            this.Salir.Location = new System.Drawing.Point(12, 398);
+            this.Salir.Name = "Salir";
+            this.Salir.Size = new System.Drawing.Size(99, 24);
+            this.Salir.TabIndex = 8;
+            this.Salir.Text = "Salir";
+            this.Salir.UseVisualStyleBackColor = true;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click);
+            // 
+            // EliminarProd
+            // 
+            this.EliminarProd.Location = new System.Drawing.Point(38, 241);
+            this.EliminarProd.Name = "EliminarProd";
+            this.EliminarProd.Size = new System.Drawing.Size(99, 47);
+            this.EliminarProd.TabIndex = 7;
+            this.EliminarProd.Text = "Eliminar Producto";
+            this.EliminarProd.UseVisualStyleBackColor = true;
+            this.EliminarProd.Click += new System.EventHandler(this.EliminarProd_Click);
+            // 
+            // modificarProd
+            // 
+            this.modificarProd.Location = new System.Drawing.Point(38, 170);
+            this.modificarProd.Name = "modificarProd";
+            this.modificarProd.Size = new System.Drawing.Size(99, 47);
+            this.modificarProd.TabIndex = 6;
+            this.modificarProd.Text = "Modificar Producto";
+            this.modificarProd.UseVisualStyleBackColor = true;
+            this.modificarProd.Click += new System.EventHandler(this.ModificarProd_Click);
+            // 
+            // agregarProd
+            // 
+            this.agregarProd.Location = new System.Drawing.Point(38, 104);
+            this.agregarProd.Name = "agregarProd";
+            this.agregarProd.Size = new System.Drawing.Size(99, 47);
+            this.agregarProd.TabIndex = 5;
+            this.agregarProd.Text = "Agregar Producto";
+            this.agregarProd.UseVisualStyleBackColor = true;
+            this.agregarProd.Click += new System.EventHandler(this.AgregarProd_Click);
             // 
             // panel1
             // 
@@ -69,7 +109,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 62);
             this.panel1.TabIndex = 4;
@@ -87,54 +127,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Sesion empresarial";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Maroon;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(188, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(578, 36);
-            this.panel4.TabIndex = 4;
-            // 
-            // agregarProd
-            // 
-            this.agregarProd.Location = new System.Drawing.Point(38, 104);
-            this.agregarProd.Name = "agregarProd";
-            this.agregarProd.Size = new System.Drawing.Size(99, 47);
-            this.agregarProd.TabIndex = 5;
-            this.agregarProd.Text = "Agregar Producto";
-            this.agregarProd.UseVisualStyleBackColor = true;
-            this.agregarProd.Click += new System.EventHandler(this.AgregarProd_Click);
-            // 
-            // modificarProd
-            // 
-            this.modificarProd.Location = new System.Drawing.Point(38, 170);
-            this.modificarProd.Name = "modificarProd";
-            this.modificarProd.Size = new System.Drawing.Size(99, 47);
-            this.modificarProd.TabIndex = 6;
-            this.modificarProd.Text = "Modificar Producto";
-            this.modificarProd.UseVisualStyleBackColor = true;
-            this.modificarProd.Click += new System.EventHandler(this.ModificarProd_Click);
-            // 
-            // EliminarProd
-            // 
-            this.EliminarProd.Location = new System.Drawing.Point(38, 241);
-            this.EliminarProd.Name = "EliminarProd";
-            this.EliminarProd.Size = new System.Drawing.Size(99, 47);
-            this.EliminarProd.TabIndex = 7;
-            this.EliminarProd.Text = "Eliminar Producto";
-            this.EliminarProd.UseVisualStyleBackColor = true;
-            // 
-            // Salir
-            // 
-            this.Salir.Location = new System.Drawing.Point(12, 398);
-            this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(99, 24);
-            this.Salir.TabIndex = 8;
-            this.Salir.Text = "Salir";
-            this.Salir.UseVisualStyleBackColor = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -145,6 +137,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Maroon;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(188, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(578, 36);
+            this.panel4.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -165,7 +167,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPrincipalEmpresarial";
             this.Text = "Empresarial";
             this.panel2.ResumeLayout(false);
