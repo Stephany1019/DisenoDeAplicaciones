@@ -14,6 +14,7 @@ namespace Testing_Project
         public static bool Login_autorizado;
         public static String Tipo_Acceso;
         public static String Usuario_Activo;
+        public static String IDUsuario_Activo;
 
         public static SqlConnection RetornaAcceso()
         {
@@ -55,6 +56,29 @@ namespace Testing_Project
             {
                 return false;
             }
+        }
+
+        public static String retornaIDUsuario(String usuario) {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select id AS DATA from tbPersona where nombre ='" + usuario + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String retornaCorreoUsuario(String id)
+        {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select email AS DATA from tbPersona where id ='" + id + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
         }
 
         public static Boolean CorreoValido(String eml)
@@ -275,6 +299,40 @@ namespace Testing_Project
             return Resultado;
         }
 
+        public static void agregaPedido(String usuario, String local, string producto, string costoProducto, string precioTotal)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            String id = obtenerUltimoIDPedido();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO Pedidos (ID, Mensajero, Usuario, Local, Producto, Costo_Producto, Precio_Total, Estado) values (@ID, @Mensajero, @Usuario, @Local, @Producto, @Costo_Producto, @Precio_Total, @Estado) "))
+            {
+                cmd.Parameters.AddWithValue("@ID", int.Parse(id) + 1);
+                cmd.Parameters.AddWithValue("@Mensajero", 2);
+                cmd.Parameters.AddWithValue("@Usuario", usuario);
+                cmd.Parameters.AddWithValue("@Local", local);
+                cmd.Parameters.AddWithValue("@Producto", producto);
+                cmd.Parameters.AddWithValue("@Costo_Producto", costoProducto);
+                cmd.Parameters.AddWithValue("@Precio_Total", precioTotal);
+                cmd.Parameters.AddWithValue("@Estado", "Pendiente");
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static String obtenerUltimoIDPedido()
+        {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select max(ID) AS DATA from Pedidos", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
         public static void agregaProducto(String nombre, String desc, float precio, int tipo) {
             SqlConnection conx = new SqlConnection();
             conx = RetornaAcceso();
@@ -332,6 +390,41 @@ namespace Testing_Project
                 cmd.ExecuteNonQuery();
                 conx.Close();
             }
+        }
+
+        public static String retornaDescProducto(String nombre) {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Descripcion AS DATA from Producto where Nombre ='" + nombre + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String retornaPrecioProducto(String nombre)
+        {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select Precio AS DATA from Producto where Nombre ='" + nombre + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String retornaIDProducto(String nombre)
+        {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select ID AS DATA from Producto where Nombre ='" + nombre + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
         }
 
         public static String RetornaPais(String Usr,String Dir)

@@ -16,10 +16,10 @@ namespace Testing_Project
     class Facturacion
     {
 
-        public void crearPDFFactura(String usuario, List<String> local, List<String> producto, List<String> costoProducto, String total) {
+        public void crearPDFFactura(String usuario, List<String> local, List<String> producto, List<String> costoProducto, String total, String correoUsuario) {
             Document doc = new Document(PageSize.LETTER);
             // Indicamos donde vamos a guardar el documento
-            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(@"./Facturas/Factura.pdf", FileMode.Create));
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(@"C:/Users/sbarrantes/Documents/Cuatri VI/Diseño de aplicaciones/Proyecto/DeliveryCR_Project/Facturas/Factura.pdf", FileMode.Create));
 
             doc.AddTitle("Factura DeliveryCR");
 
@@ -58,34 +58,35 @@ namespace Testing_Project
             tblGeneral.AddCell(totalTitulo);
 
             // Llenamos la tabla con información
-            foreach (String localX in local) {
-                localTitulo = new PdfPCell(new Phrase(localX, _standardFont));
+            for(int i = 0; i < producto.Count(); i++) {
+                localTitulo = new PdfPCell(new Phrase(local.ElementAt(i), _standardFont));
                 localTitulo.BorderWidth = 0;
                 tblGeneral.AddCell(localTitulo);
-            }
+            
 
-            foreach (String productoX in producto)
-            {
-                productoTitulo = new PdfPCell(new Phrase(productoX, _standardFont));
+           
+                productoTitulo = new PdfPCell(new Phrase(producto.ElementAt(i), _standardFont));
                 productoTitulo.BorderWidth = 0;
                 tblGeneral.AddCell(productoTitulo);
-            }
+            
 
-            foreach (String costoX in costoProducto)
-            {
-                costoTitulo = new PdfPCell(new Phrase(costoX, _standardFont));
+      
+                costoTitulo = new PdfPCell(new Phrase(costoProducto.ElementAt(i), _standardFont));
                 costoTitulo.BorderWidth = 0;
                 tblGeneral.AddCell(costoTitulo);
-            }
 
-            totalTitulo = new PdfPCell(new Phrase(total, _standardFont));
-            totalTitulo.BorderWidth = 0;
-            tblGeneral.AddCell(totalTitulo);
+                totalTitulo = new PdfPCell(new Phrase(total, _standardFont));
+                totalTitulo.BorderWidth = 0;
+                tblGeneral.AddCell(totalTitulo);
+
+            }
 
             doc.Add(tblGeneral);
 
             doc.Close();
             writer.Close();
+
+            enviarCorreoFactura(correoUsuario);
         }
 
         public void enviarCorreoFactura(String para) {
@@ -98,7 +99,7 @@ namespace Testing_Project
             Correo.IsBodyHtml = false; // Le indicamos que el cuerpo del mensaje no es HTLM
             Correo.Priority = MailPriority.Normal;
            
-            Attachment attachment = new Attachment("./Facturas/Factura.pdf");
+            Attachment attachment = new Attachment("C:/Users/sbarrantes/Documents/Cuatri VI/Diseño de aplicaciones/Proyecto/DeliveryCR_Project/Facturas/Factura.pdf");
             Correo.Attachments.Add(attachment);
 
             SmtpClient smtp = new SmtpClient();

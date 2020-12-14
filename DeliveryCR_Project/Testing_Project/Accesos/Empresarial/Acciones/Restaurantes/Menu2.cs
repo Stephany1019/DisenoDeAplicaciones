@@ -17,7 +17,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Restaurantes
         {
             InitializeComponent();
         }
-        List<string> articulos = new List<string>();
+        public static List<string> articulos = new List<string>();
         private SqlConnection con = SQLTransact.RetornaAcceso();
         private void btnAtras_Click(object sender, EventArgs e)
         {
@@ -26,26 +26,18 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Restaurantes
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //agregar lista de pedidos 
-            articulos.Add(comboBox1.SelectedItem.ToString());
 
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //agregar lista de pedidos 
-            articulos.Add(comboBox1.SelectedItem.ToString());
 
         }
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //agregar lista de pedidos 
-            articulos.Add(comboBox1.SelectedItem.ToString());
 
         }
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //agregar lista de pedidos 
-            articulos.Add(comboBox1.SelectedItem.ToString());
 
         }
 
@@ -62,6 +54,14 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Restaurantes
                 comboBox1.Items.Add(producto["Nombre"].ToString());
             }
             con.Close();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            //agregar lista de pedidos 
+            Carrito.locales.Add(FrmLocalRestaurante.localSeleccionado.ToString());
+            articulos.Add(comboBox1.SelectedItem.ToString());
+            MessageBox.Show("Producto agregado correctamente");
         }
     }
 }
