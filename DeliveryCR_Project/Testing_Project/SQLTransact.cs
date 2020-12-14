@@ -278,7 +278,37 @@ namespace Testing_Project
         public static void agregaProducto(String nombre, String desc, float precio, int tipo) {
             SqlConnection conx = new SqlConnection();
             conx = RetornaAcceso();
-            using (SqlCommand cmd = new SqlCommand("Insert INTO Producto ( Nombre, Descripcion, Precio, Tipo) values ( @Nombre, @Descripcion, @Precio, @Tipo) "))
+            String id = obtenerUltimoIDProducto();
+            using (SqlCommand cmd = new SqlCommand("Insert INTO Producto (ID, Nombre, Descripcion, Precio, Tipo) values (@ID, @Nombre, @Descripcion, @Precio, @Tipo) "))
+            {
+                cmd.Parameters.AddWithValue("@ID", int.Parse(id)+1);
+                cmd.Parameters.AddWithValue("@Nombre", nombre);
+                cmd.Parameters.AddWithValue("@Descripcion", desc);
+                cmd.Parameters.AddWithValue("@Precio", precio);
+                cmd.Parameters.AddWithValue("@Tipo", tipo);
+                cmd.Connection = conx;
+                conx.Open();
+                cmd.ExecuteNonQuery();
+                conx.Close();
+            }
+        }
+
+        public static String obtenerUltimoIDProducto() {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select max(ID) AS DATA from Producto", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static void modificaProducto(String ID, String nombre, String desc, float precio, int tipo)
+        {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            using (SqlCommand cmd = new SqlCommand("UPDATE Producto SET Nombre = @Nombre, Descripcion = @Descripcion, Precio = @Precio, Tipo = @Tipo WHERE ID ='" + ID + "'"))
             {
                 cmd.Parameters.AddWithValue("@Nombre", nombre);
                 cmd.Parameters.AddWithValue("@Descripcion", desc);
@@ -291,33 +321,12 @@ namespace Testing_Project
             }
         }
 
-        public static void modificaProducto(String nombre, String desc, float precio, int tipo)
+        public static void eliminaProducto(String nombre, String ID)
         {
             SqlConnection conx = new SqlConnection();
             conx = RetornaAcceso();
-            using (SqlCommand cmd = new SqlCommand("Insert INTO Producto ( Nombre, Descripcion, Precio, Tipo) values ( @Nombre, @Descripcion, @Precio, @Tipo) "))
+            using (SqlCommand cmd = new SqlCommand("DELETE FROM Producto WHERE Nombre ='" + nombre + "' AND ID ='" + ID + "'"))
             {
-                cmd.Parameters.AddWithValue("@Nombre", nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", desc);
-                cmd.Parameters.AddWithValue("@Precio", precio);
-                cmd.Parameters.AddWithValue("@Tipo", tipo);
-                cmd.Connection = conx;
-                conx.Open();
-                cmd.ExecuteNonQuery();
-                conx.Close();
-            }
-        }
-
-        public static void eliminaProducto(String nombre, String desc, float precio, int tipo)
-        {
-            SqlConnection conx = new SqlConnection();
-            conx = RetornaAcceso();
-            using (SqlCommand cmd = new SqlCommand("Insert INTO Producto ( Nombre, Descripcion, Precio, Tipo) values ( @Nombre, @Descripcion, @Precio, @Tipo) "))
-            {
-                cmd.Parameters.AddWithValue("@Nombre", nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", desc);
-                cmd.Parameters.AddWithValue("@Precio", precio);
-                cmd.Parameters.AddWithValue("@Tipo", tipo);
                 cmd.Connection = conx;
                 conx.Open();
                 cmd.ExecuteNonQuery();
@@ -401,6 +410,15 @@ namespace Testing_Project
             da.Fill(ds);
             Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
             return Resultado;
+        }
+
+        public static SqlDataReader RetornaTipoProducto() {
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            conx.Open();
+            SqlCommand cmd = new SqlCommand("Select Descripcion AS DATA from tipo_producto", conx);
+            SqlDataReader sqlReader = cmd.ExecuteReader();
+            return sqlReader;
         }
     }
 }
