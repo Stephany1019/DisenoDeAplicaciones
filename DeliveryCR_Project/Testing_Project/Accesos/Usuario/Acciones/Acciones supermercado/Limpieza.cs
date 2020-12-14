@@ -14,7 +14,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
     public partial class Limpieza : Form
 
     {
-        List<string> articulos = new List<string>();
+        public List<string> articulos = new List<string>();
         private SqlConnection con = SQLTransact.RetornaAcceso();
         public Limpieza()
         {
@@ -67,6 +67,12 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AgregaArticulo agregaArticulo = new AgregaArticulo();
+            agregaArticulo.ShowDialog();
         }
     }
 }

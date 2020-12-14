@@ -17,6 +17,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
         {
             InitializeComponent();
         }
+        public List<string> articulos = new List<string>();
         private SqlConnection con = SQLTransact.RetornaAcceso();
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -26,9 +27,23 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            articulos.Add(comboBox1.SelectedItem.ToString());
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            articulos.Add(comboBox1.SelectedItem.ToString());
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            articulos.Add(comboBox1.SelectedItem.ToString());
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            articulos.Add(comboBox1.SelectedItem.ToString());
+        }
         private void Bebidas_Load(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand(" select prd.Nombre from Producto prd "
@@ -43,6 +58,12 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
             }
 
             con.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AgregaArticulo agregaArticulo = new AgregaArticulo();
+            agregaArticulo.ShowDialog();
         }
     }
 }
