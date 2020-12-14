@@ -19,7 +19,7 @@ namespace Testing_Project
         public void crearPDFFactura(String usuario, List<String> local, List<String> producto, List<String> costoProducto, String total, String correoUsuario) {
             Document doc = new Document(PageSize.LETTER);
             // Indicamos donde vamos a guardar el documento
-            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(@"C:/Users/sbarrantes/Documents/Cuatri VI/Diseño de aplicaciones/Proyecto/DeliveryCR_Project/Facturas/Factura.pdf", FileMode.Create));
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(@"C:/Temp/Factura.pdf", FileMode.Create));
 
             doc.AddTitle("Factura DeliveryCR");
 
@@ -99,7 +99,7 @@ namespace Testing_Project
             Correo.IsBodyHtml = false; // Le indicamos que el cuerpo del mensaje no es HTLM
             Correo.Priority = MailPriority.Normal;
            
-            Attachment attachment = new Attachment("C:/Users/sbarrantes/Documents/Cuatri VI/Diseño de aplicaciones/Proyecto/DeliveryCR_Project/Facturas/Factura.pdf");
+            Attachment attachment = new Attachment("C:/Temp/Factura.pdf");
             Correo.Attachments.Add(attachment);
 
             SmtpClient smtp = new SmtpClient();

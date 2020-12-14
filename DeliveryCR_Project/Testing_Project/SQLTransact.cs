@@ -15,6 +15,8 @@ namespace Testing_Project
         public static String Tipo_Acceso;
         public static String Usuario_Activo;
         public static String IDUsuario_Activo;
+        public static String Dir_Completa;
+        public static String MetPago_Completo;
 
         public static SqlConnection RetornaAcceso()
         {
@@ -62,7 +64,7 @@ namespace Testing_Project
             String Resultado;
             SqlConnection conx = new SqlConnection();
             conx = RetornaAcceso();
-            SqlDataAdapter da = new SqlDataAdapter("Select id AS DATA from tbPersona where nombre ='" + usuario + "'", conx);
+            SqlDataAdapter da = new SqlDataAdapter("Select id AS DATA from tbPersona Inner join tbLogin on tbLogin.idLog = tbPersona.id where Username = '" + usuario + "'", conx);
             DataSet ds = new DataSet();
             da.Fill(ds);
             Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
@@ -513,5 +515,30 @@ namespace Testing_Project
             SqlDataReader sqlReader = cmd.ExecuteReader();
             return sqlReader;
         }
+
+        public static String ObtDireccionCompleta(String Usr,String Dir)
+        {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select 'Direccion: '+Pais+','+Provincia+','+Canton+','+Distrito+', Apartamente '+Apartamento+', Codigo Postal '+Zipcode AS 'DATA' from tbDireccion where Username ='" + Usr + "' and nombreDir ='" + Dir + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
+        public static String ObtMepagCompleto(String Usr, String Met)
+        {
+            String Resultado;
+            SqlConnection conx = new SqlConnection();
+            conx = RetornaAcceso();
+            SqlDataAdapter da = new SqlDataAdapter("Select 'Metodo de Pago --- '+' Emisor: ' + Emisor +' --- Dueño Registrado: '+ NombreTar AS 'DATA' from tbMetPagos where Username ='" + Usr + "' and nombreMet ='" + Met + "'", conx);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            Resultado = ds.Tables[0].Rows[0]["DATA"].ToString();
+            return Resultado;
+        }
+
     }
 }

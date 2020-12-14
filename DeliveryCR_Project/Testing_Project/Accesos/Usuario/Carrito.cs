@@ -13,6 +13,7 @@ namespace Testing_Project.Accesos.Usuario
 {
     public partial class Carrito : Form
     {
+
         public static List<string> articulos = new List<string>();
         public static List<string> locales = new List<string>();
         public List<string> elementos = new List<string>();
@@ -23,6 +24,8 @@ namespace Testing_Project.Accesos.Usuario
         public Carrito()
         {
             InitializeComponent();
+            cargar_tarjetas(SQLTransact.Usuario_Activo);
+            cargar_datos(SQLTransact.Usuario_Activo);
             articulos.AddRange(Acciones.Restaurantes.Menu1.articulos);
             articulos.AddRange(Acciones.Restaurantes.Menu2.articulos);
             articulos.AddRange(Acciones.Restaurantes.Menu3.articulos);
@@ -51,6 +54,39 @@ namespace Testing_Project.Accesos.Usuario
            
         }
 
+        public void cargar_tarjetas(String Usr)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT nombreMet FROM tbMetPagos WHERE Username ='" + Usr + "'", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            DataRow fila = dt.NewRow();
+            fila["nombreMet"] = "";
+            dt.Rows.InsertAt(fila, 0);
+            comboBox1.DisplayMember = "nombreMet";
+            comboBox1.DataSource = dt;
+
+        }
+
+        public void cargar_datos(String Usr)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT nombreDir FROM tbDireccion WHERE Username ='" + Usr + "'", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            DataRow fila = dt.NewRow();
+            fila["nombreDir"] = "";
+            dt.Rows.InsertAt(fila, 0);
+            comboBox2.DisplayMember = "nombreDir";
+            comboBox2.DataSource = dt;
+
+        }
+
+
         private void PictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -63,12 +99,24 @@ namespace Testing_Project.Accesos.Usuario
 
         private void ContinuarBTN_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < articulos.Count(); i++) {
-                SQLTransact.agregaPedido(SQLTransact.IDUsuario_Activo, locales.ElementAt(i), idProductos.ElementAt(i), preciosLista.ElementAt(i), preciosLista.ElementAt(i));
+            if ((comboBox1.Text != "") && (comboBox2.Text != ""))
+            {
+                for (int i = 0; i < articulos.Count(); i++)
+                {
+                    SQLTransact.agregaPedido(SQLTransact.IDUsuario_Activo, locales.ElementAt(i), idProductos.ElementAt(i), preciosLista.ElementAt(i), preciosLista.ElementAt(i));
+                }
+                SQLTransact.MetPago_Completo = SQLTransact.ObtMepagCompleto(SQLTransact.Usuario_Activo, comboBox1.Text);
+                SQLTransact.Dir_Completa = SQLTransact.ObtDireccionCompleta(SQLTransact.Usuario_Activo, comboBox2.Text);
+                Facturacion factura = new Facturacion();
+                factura.crearPDFFactura(SQLTransact.Usuario_Activo, locales, articulos, preciosLista, totaltxt.Text, SQLTransact.retornaCorreoUsuario(SQLTransact.IDUsuario_Activo));
+                MessageBox.Show("Tu orden ha sido completada, pronto te llegara una factura al correo");
+                ActiveForm.Close();
             }
-            Facturacion factura = new Facturacion();
-            factura.crearPDFFactura(SQLTransact.Usuario_Activo, locales, articulos, preciosLista, totaltxt.Text, SQLTransact.retornaCorreoUsuario(SQLTransact.IDUsuario_Activo));
-            MessageBox.Show("Tu orden ha sido completada, pronto te llegara una factura al correo");
+            else {
+
+                MessageBox.Show("Seleccione un metodo de pago y una direccion");
+            }
+            
         }
 
         private void ProductoTXT_TextChanged(object sender, EventArgs e)
@@ -79,6 +127,21 @@ namespace Testing_Project.Accesos.Usuario
         private void AtrasBtn_Click(object sender, EventArgs e)
         {
             ActiveForm.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Carrito_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = comboBox1.Items.IndexOf("Efectivo");
         }
     }
 }
