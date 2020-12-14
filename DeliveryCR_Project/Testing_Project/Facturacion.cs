@@ -29,6 +29,8 @@ namespace Testing_Project
 
             // Escribimos el encabezamiento en el documento
             doc.Add(new Paragraph("Factura DeliveryCR, para usuario: "+usuario));
+            doc.Add(new Paragraph("Método de pago: " + SQLTransact.MetPago_Completo));
+            doc.Add(new Paragraph("Dirección: " + SQLTransact.Dir_Completa));
             doc.Add(Chunk.NEWLINE);
 
             PdfPTable tblGeneral = new PdfPTable(4);
