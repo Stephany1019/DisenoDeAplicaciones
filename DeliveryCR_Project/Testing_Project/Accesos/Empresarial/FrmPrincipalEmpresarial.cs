@@ -29,28 +29,33 @@ namespace Testing_Project
         {
             AgregarProducto form = new AgregarProducto();
             form.ShowDialog();
-            this.Close();
+           
         }
 
         private void ModificarProd_Click(object sender, EventArgs e)
         {
             ModificarProducto form = new ModificarProducto();
             form.ShowDialog();
-            this.Close();
+            
         }
 
         private void EliminarProd_Click(object sender, EventArgs e)
         {
             EliminarProducto form = new EliminarProducto();
             form.ShowDialog();
-            this.Close();
+           
         }
 
-        private void Salir_Click(object sender, EventArgs e)
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-            FrmLogin form = new FrmLogin();
-            form.ShowDialog();
-            this.Close();
+            ActiveForm.Close();
+           
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

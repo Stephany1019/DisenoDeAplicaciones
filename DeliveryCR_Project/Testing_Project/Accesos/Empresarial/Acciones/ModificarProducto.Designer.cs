@@ -128,7 +128,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(5, -98);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(791, 647);
+            this.pictureBox1.Size = new System.Drawing.Size(791, 604);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -229,6 +229,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.id);
             this.Controls.Add(this.idTxt);
             this.Controls.Add(this.panel2);
@@ -241,7 +242,9 @@
             this.Controls.Add(this.nombrelbl);
             this.Controls.Add(this.nombretxt);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ModificarProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarProducto";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

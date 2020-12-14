@@ -91,9 +91,7 @@ namespace Testing_Project.Accesos.Empresarial.Acciones
 
         private void Atras_Click(object sender, EventArgs e)
         {
-            FrmPrincipalEmpresarial form = new FrmPrincipalEmpresarial();
-            form.ShowDialog();
-            this.Close();
+            ActiveForm.Close();
         }
     }
 }
