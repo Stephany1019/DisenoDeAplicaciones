@@ -84,9 +84,9 @@
             this.label1.Location = new System.Drawing.Point(11, 169);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(334, 17);
+            this.label1.Size = new System.Drawing.Size(336, 17);
             this.label1.TabIndex = 130;
-            this.label1.Text = "Modifica tu contrasena para ingresar a la aplicacion";
+            this.label1.Text = "Modifica tu Contraseña para ingresar a la aplicacion";
             // 
             // panel1
             // 
@@ -258,7 +258,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmCambiaPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cambia Contrasena";
+            this.Text = "Cambia Contraseña";
             this.Load += new System.EventHandler(this.FrmCambiaPass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbDireccionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deliveryCRDataSet)).EndInit();
