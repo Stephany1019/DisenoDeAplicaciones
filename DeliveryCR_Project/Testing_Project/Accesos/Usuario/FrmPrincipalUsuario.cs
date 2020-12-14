@@ -79,5 +79,11 @@ namespace Testing_Project.Usuarios.Cliente
             Accesos.Usuario.Carrito form = new Accesos.Usuario.Carrito();
             form.ShowDialog();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            FrmHistorialPedidos Pedidos = new FrmHistorialPedidos();
+            Pedidos.ShowDialog();
+        }
     }
 }

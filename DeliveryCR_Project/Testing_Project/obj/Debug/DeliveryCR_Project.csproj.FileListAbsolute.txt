@@ -342,3 +342,4 @@ C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\Deliver
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.IniSesion.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmCambiaPass.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Carrito.resources
+C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmHistorialPedidos.resources

@@ -172,6 +172,12 @@
     <Compile Include="Accesos\Usuario\Acciones\FrmEliminarMetPago.Designer.cs">
       <DependentUpon>FrmEliminarMetPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmHistorialPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\Usuario\Acciones\FrmHistorialPedidos.Designer.cs">
+      <DependentUpon>FrmHistorialPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Accesos\Usuario\Acciones\FrmMetPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmEliminarMetPago.resx">
       <DependentUpon>FrmEliminarMetPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmHistorialPedidos.resx">
+      <DependentUpon>FrmHistorialPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accesos\Usuario\Acciones\FrmLocalRestaurante.resx">
       <DependentUpon>FrmLocalRestaurante.cs</DependentUpon>
