@@ -197,7 +197,6 @@ C:\Users\eherreran967\Desktop\TEst\Proyecto\Proyecto\DeliveryCR_Project\Testing_
 C:\Users\eherreran967\Desktop\TEst\Proyecto\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.exe
 C:\Users\eherreran967\Desktop\TEst\Proyecto\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.pdb
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csprojAssemblyReference.cache
-C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.exe.config
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Admin.Admin.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmCuenta.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmCuenta_Direccion.resources
@@ -344,3 +343,5 @@ C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\Deliver
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\bin\Debug\itextsharp.xml
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmHistorialPedidos.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Carrito.resources
+C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\bin\Debug\itextsharp.dll
+C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\bin\Debug\itextsharp.xml
