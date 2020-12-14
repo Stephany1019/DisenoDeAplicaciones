@@ -18,7 +18,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Restaurantes
             InitializeComponent();
         }
 
-        readonly List<string> articulos = new List<string>();
+        public List<string> articulos = new List<string>();
         private SqlConnection con = SQLTransact.RetornaAcceso();
         private void btnAtras_Click(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Restaurantes
             SqlDataReader producto = cmd.ExecuteReader();
             while (producto.Read())
             {
-                comboBox1.Items.Add(producto["Nombre"].ToString());
+                comboBox2.Items.Add(producto["Nombre"].ToString());
             }
             con.Close();
         }
@@ -66,6 +66,12 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Restaurantes
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AgregaArticulo agregaArticulo = new AgregaArticulo();
+            agregaArticulo.ShowDialog();
         }
     }
 }

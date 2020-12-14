@@ -156,6 +156,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
             this.button1.TabIndex = 52;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 

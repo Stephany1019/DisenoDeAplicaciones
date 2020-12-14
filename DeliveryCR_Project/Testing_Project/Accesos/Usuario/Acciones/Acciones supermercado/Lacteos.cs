@@ -17,7 +17,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
         {
             InitializeComponent();
         }
-        List<string> articulos = new List<string>();
+        public List<string> articulos = new List<string>();
         private SqlConnection con = SQLTransact.RetornaAcceso();
         private void label2_Click(object sender, EventArgs e)
         {
@@ -66,6 +66,12 @@ namespace Testing_Project.Accesos.Usuario.Acciones.Acciones_supermercado
                 comboBox1.Items.Add(producto["Nombre"].ToString());
             }
             con.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AgregaArticulo agregaArticulo = new AgregaArticulo();
+            agregaArticulo.ShowDialog();
         }
     }
 }
