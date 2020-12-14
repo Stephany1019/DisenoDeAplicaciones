@@ -23,6 +23,7 @@ namespace Testing_Project
             {
                 SQLTransact.Login_autorizado = true;
                 SQLTransact.Usuario_Activo = txtUsario.Text;
+                SQLTransact.IDUsuario_Activo = SQLTransact.retornaIDUsuario(txtUsario.Text);
                 SQLTransact.Tipo_Acceso = SQLTransact.TipoAcceso(txtUsario.Text);
                 this.Close();
             }

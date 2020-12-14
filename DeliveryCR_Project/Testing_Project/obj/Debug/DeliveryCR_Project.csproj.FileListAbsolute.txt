@@ -80,7 +80,6 @@ C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Proje
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.exe
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.pdb
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csprojAssemblyReference.cache
-C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.exe.config
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Admin.Admin.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Empresarial.Acciones.AgregarProducto.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Mensajero.frmPedidos.resources
@@ -89,7 +88,6 @@ C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\Deliver
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmProducto.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmRestaurante.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmSupermercado.resources
-C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Carrito.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Factura.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmLogin.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Cliente.FrmPrincipalUsuario.resources
@@ -97,7 +95,6 @@ C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\Deliver
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.Empresarial.Boton2.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmPrincipalEmpresarial.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmRegistro.resources
-C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Principal.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Properties.Resources.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Usuarios.FrmPrincipalMensajero.resources
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\DeliveryCR_Project.csproj.GenerateResource.cache
@@ -343,3 +340,7 @@ C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\Deliver
 C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.FrmCambiaPass.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Carrito.resources
 C:\Users\eherreran967\Desktop\Prod\DisenoDeAplicaciones\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmHistorialPedidos.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\bin\Debug\itextsharp.dll
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\bin\Debug\itextsharp.xml
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Acciones.FrmHistorialPedidos.resources
+C:\Users\sbarrantes\Documents\Cuatri VI\Diseño de aplicaciones\Proyecto\DeliveryCR_Project\Testing_Project\obj\Debug\Testing_Project.Accesos.Usuario.Carrito.resources

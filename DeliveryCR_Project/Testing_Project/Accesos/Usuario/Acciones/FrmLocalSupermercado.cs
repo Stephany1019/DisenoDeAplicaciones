@@ -17,6 +17,7 @@ namespace Testing_Project.Accesos.Usuario.Acciones
             InitializeComponent();
         }
 
+        public static int localSeleccionado;
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -24,6 +25,17 @@ namespace Testing_Project.Accesos.Usuario.Acciones
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string local = comboBox1.Text;
+
+            switch (local)
+            {
+                case "Walmart":
+                    localSeleccionado = 11;
+                    break;
+                case "Maxipali":
+                    localSeleccionado = 12;
+                    break;
+            }
             FrmSupermercado r = new FrmSupermercado();
             r.ShowDialog();
         }

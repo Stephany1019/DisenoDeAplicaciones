@@ -75,7 +75,7 @@
             this.desclbl.BackColor = System.Drawing.Color.DodgerBlue;
             this.desclbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desclbl.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.desclbl.Location = new System.Drawing.Point(360, 142);
+            this.desclbl.Location = new System.Drawing.Point(351, 142);
             this.desclbl.Name = "desclbl";
             this.desclbl.Size = new System.Drawing.Size(74, 13);
             this.desclbl.TabIndex = 2;
@@ -104,22 +104,26 @@
             // productoTXT
             // 
             this.productoTXT.Location = new System.Drawing.Point(112, 169);
+            this.productoTXT.Multiline = true;
             this.productoTXT.Name = "productoTXT";
-            this.productoTXT.Size = new System.Drawing.Size(125, 20);
+            this.productoTXT.Size = new System.Drawing.Size(125, 114);
             this.productoTXT.TabIndex = 5;
+            this.productoTXT.TextChanged += new System.EventHandler(this.ProductoTXT_TextChanged);
             // 
             // desctxt
             // 
             this.desctxt.Location = new System.Drawing.Point(327, 169);
+            this.desctxt.Multiline = true;
             this.desctxt.Name = "desctxt";
-            this.desctxt.Size = new System.Drawing.Size(125, 20);
+            this.desctxt.Size = new System.Drawing.Size(125, 114);
             this.desctxt.TabIndex = 6;
             // 
             // preciotxt
             // 
             this.preciotxt.Location = new System.Drawing.Point(557, 169);
+            this.preciotxt.Multiline = true;
             this.preciotxt.Name = "preciotxt";
-            this.preciotxt.Size = new System.Drawing.Size(125, 20);
+            this.preciotxt.Size = new System.Drawing.Size(125, 114);
             this.preciotxt.TabIndex = 7;
             // 
             // totaltxt
@@ -137,6 +141,7 @@
             this.atrasBtn.TabIndex = 9;
             this.atrasBtn.Text = "Volver a tienda";
             this.atrasBtn.UseVisualStyleBackColor = true;
+            this.atrasBtn.Click += new System.EventHandler(this.AtrasBtn_Click);
             // 
             // continuarBTN
             // 
@@ -146,6 +151,7 @@
             this.continuarBTN.TabIndex = 10;
             this.continuarBTN.Text = "Continuar con compra";
             this.continuarBTN.UseVisualStyleBackColor = true;
+            this.continuarBTN.Click += new System.EventHandler(this.ContinuarBTN_Click);
             // 
             // pictureBox1
             // 
