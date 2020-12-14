@@ -46,11 +46,17 @@ namespace Testing_Project
             this.Close();
         }
 
-        private void Salir_Click(object sender, EventArgs e)
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
             FrmLogin form = new FrmLogin();
             form.ShowDialog();
             this.Close();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
